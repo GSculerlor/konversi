@@ -1,0 +1,44 @@
+CREATE TABLE IF NOT EXISTS successFetch(
+    id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+    last_currrencies_fetch TEXT AS kotlinx.datetime.Instant,
+    last_currency_rate_fetch TEXT AS kotlinx.datetime.Instant
+);
+
+INSERT OR IGNORE INTO successFetch(id) VALUES (0);
+
+getLastCurrenciesFetch:
+SELECT successFetch.last_currrencies_fetch FROM successFetch WHERE id = 0;
+
+updateLastCurrenciesFetch:
+UPDATE successFetch SET last_currrencies_fetch = :last_currrencies_fetch WHERE id = 0;
+
+getLastCurrencyRateFetch:
+SELECT successFetch.last_currency_rate_fetch FROM successFetch WHERE id = 0;
+
+updateLastCurrencyRateFetch:
+UPDATE successFetch SET last_currency_rate_fetch = :last_currency_rate_fetch WHERE id = 0;
+
+CREATE TABLE IF NOT EXISTS currencies(
+    code TEXT PRIMARY KEY NOT NULL,
+    name TEXT NOT NULL
+);
+
+getCurrencies:
+SELECT * FROM currencies;
+
+addCurrencies:
+INSERT OR REPLACE INTO currencies(code, name) VALUES (:code, :name);
+
+CREATE TABLE IF NOT EXISTS currencyRates(
+    code TEXT PRIMARY KEY NOT NULL,
+    rate REAL NOT NULL
+);
+
+getCurrencyRates:
+SELECT currencies.name, currencyRates.* FROM currencyRates INNER JOIN currencies WHERE currencies.code = currencyRates.code;
+
+getCurrencyRate:
+SELECT currencies.name, currencyRates.* FROM currencyRates INNER JOIN currencies WHERE  currencies.code = :code AND currencies.code = currencyRates.code LIMIT 1;
+
+addCurrencyRates:
+INSERT OR REPLACE INTO currencyRates(code, rate) VALUES (:code, :rate);

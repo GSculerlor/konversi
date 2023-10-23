@@ -1,0 +1,98 @@
+[versions]
+accompanist = "0.33.1-alpha"
+activity-compose = "1.7.2"
+agp = "8.1.2"
+androidDesugarJdkLibs = "2.0.3"
+androidx-test-ext-junit = "1.1.5"
+androidxComposeCompiler = "1.5.0"
+androidxCore = "1.9.0"
+androidxWork = "2.9.0-alpha01"
+buildkonfig = "0.14.0"
+coil-compose = "2.4.0"
+compose-bom = "2023.09.01"
+core-ktx = "1.12.0"
+coroutines = "1.7.3"
+espresso-core = "3.5.1"
+junit = "4.13.2"
+koin = "3.4.3"
+koinCompose = "3.4.6"
+kotlin = "1.9.0"
+kotlinter = "3.16.0"
+kotlinxDateTime = "0.4.1"
+kotlinxSerialization = "1.6.0"
+ksp = "1.9.0-1.0.13"
+ktlint = "0.0.26"
+ktor = "2.3.4"
+lifecycle-runtime-ktx = "2.6.2"
+mockk = "1.13.8"
+slf4j = "2.0.9"
+sqldelight = "2.0.0"
+turbine = "1.0.0"
+
+[libraries]
+accompanist-systemuicontroller = { group = "com.google.accompanist", name = "accompanist-systemuicontroller", version.ref = "accompanist" }
+activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activity-compose" }
+android-desugarJdkLibs = { group = "com.android.tools", name = "desugar_jdk_libs", version.ref = "androidDesugarJdkLibs" }
+android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "agp" }
+androidx-compose-foundation = { group = "androidx.compose.foundation", name = "foundation" }
+androidx-compose-foundation-layout = { group = "androidx.compose.foundation", name = "foundation-layout" }
+androidx-compose-runtime = { group = "androidx.compose.runtime", name = "runtime" }
+androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-compose-ui-util = { group = "androidx.compose.ui", name = "ui-util" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidxCore" }
+androidx-test-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-test-ext-junit" }
+androidx-work-ktx = { group = "androidx.work", name = "work-runtime-ktx", version.ref = "androidxWork" }
+buildkonfig = { group = "com.codingfeline.buildkonfig", name = "buildkonfig-gradle-plugin", version.ref = "buildkonfig" }
+coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coil-compose" }
+compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "compose-bom" }
+core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }
+foundation = { group = "androidx.compose.foundation", name = "foundation" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin" }
+koin-androidx-compose = { module = "io.insert-koin:koin-androidx-compose", version.ref = "koinCompose" }
+koin-androidx-workmanager = { module = "io.insert-koin:koin-androidx-workmanager", version.ref = "koin" }
+koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin" }
+koin-test = { module = "io.insert-koin:koin-test", version.ref = "koin" }
+kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
+kotlinx-coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutines" }
+kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutines" }
+kotlinx-datetime = { group = "org.jetbrains.kotlinx", name = "kotlinx-datetime", version.ref = "kotlinxDateTime" }
+kotlinx-serialization = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-core", version.ref = "kotlinxSerialization" }
+ksp-gradlePlugin = { group = "com.google.devtools.ksp", name = "com.google.devtools.ksp.gradle.plugin", version.ref = "ksp" }
+ktlint = { module = "com.twitter.compose.rules:ktlint", version.ref = "ktlint" }
+ktor-client-android = { group = "io.ktor", name = "ktor-client-android", version.ref = "ktor" }
+ktor-client-content-negotiation = { group = "io.ktor", name = "ktor-client-content-negotiation", version.ref = "ktor" }
+ktor-client-core = { group = "io.ktor", name = "ktor-client-core", version.ref = "ktor" }
+ktor-client-json = { group = "io.ktor", name = "ktor-client-json", version.ref = "ktor" }
+ktor-client-logging = { group = "io.ktor", name = "ktor-client-logging", version.ref = "ktor" }
+ktor-client-serialization = { group = "io.ktor", name = "ktor-client-serialization", version.ref = "ktor" }
+ktor-serialization-kotlinx-json = { group = "io.ktor", name = "ktor-serialization-kotlinx-json", version.ref = "ktor" }
+lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle-runtime-ktx" }
+mockk = { group = "io.mockk", name = "mockk", version.ref = "mockk" }
+slf4j = { group = "org.slf4j", name = "slf4j-simple", version.ref = "slf4j" }
+turbine = { group = "app.cash.turbine", name = "turbine", version.ref = "turbine" }
+sqldelight-android = { group = "app.cash.sqldelight", name = "android-driver", version.ref = "sqldelight" }
+sqldelight-coroutines = { module = "app.cash.sqldelight:coroutines-extensions", version.ref = "sqldelight" }
+sqldelight-primitive = { module = "app.cash.sqldelight:primitive-adapters", version.ref = "sqldelight" }
+sqldelight-sqlite = { module = "app.cash.sqldelight:sqlite-driver", version.ref = "sqldelight" }
+ui = { group = "androidx.compose.ui", name = "ui" }
+ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+
+[bundles]
+ktor-common = ["ktor-client-core", "ktor-client-json", "ktor-client-logging", "ktor-client-serialization", "ktor-client-content-negotiation", "ktor-serialization-kotlinx-json"]
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlinter = { id = "org.jmailen.kotlinter", version.ref = "kotlinter" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+sqldelight = { id = "app.cash.sqldelight", version.ref = "sqldelight" }
